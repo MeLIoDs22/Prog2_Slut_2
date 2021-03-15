@@ -360,3 +360,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+*.cache
+*.dll
+*.pdb
+*.cache
+Slut_Project_2/.vs/Slut_Project_2/v16/.suo
