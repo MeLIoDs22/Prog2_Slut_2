@@ -28,7 +28,7 @@
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Engine\Graphics\2D\" />
     <Folder Include="Scripts\Entities\" />
+    <Folder Include="Scripts\World\" />
   </ItemGroup>
 </Project>
