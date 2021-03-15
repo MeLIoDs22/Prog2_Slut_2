@@ -11,7 +11,12 @@ namespace Slut_Project_2.Engine.Inputs
     /// </summary>
     public class L_Mouse
     {
+
         public MouseState CurrentState, OldState;
+        public Vector2 MousePosition;
+
+
+
 
         public L_Mouse()
         {
@@ -19,12 +24,15 @@ namespace Slut_Project_2.Engine.Inputs
             OldState = new MouseState();
         }
 
+
+
+
         public void Update(GameTime gameTime)
         {
             OldState = CurrentState;
             CurrentState = Mouse.GetState();
 
-
+            MousePosition = CurrentState.Position.ToVector2();
         }
     }
 }

@@ -11,6 +11,7 @@ namespace Slut_Project_2.Engine.Inputs
     /// </summary>
     public class L_Keyboard
     {
+
         public KeyboardState CurrentState, OldState;
 
         public bool Up;
@@ -18,11 +19,17 @@ namespace Slut_Project_2.Engine.Inputs
         public bool Left;
         public bool Right;
 
+
+
+
         public L_Keyboard()
         {
             CurrentState = new KeyboardState();
             OldState = new KeyboardState();
         }
+
+
+
 
         public void Update(GameTime gameTime)
         {
@@ -31,6 +38,9 @@ namespace Slut_Project_2.Engine.Inputs
 
             Up_Down_Left_Right();
         }
+
+
+
 
         private void Up_Down_Left_Right()
         {

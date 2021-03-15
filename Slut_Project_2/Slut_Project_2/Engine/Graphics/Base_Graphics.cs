@@ -14,6 +14,8 @@ namespace Slut_Project_2.Engine.Graphics
         public abstract Vector2 Position { get; set; }
 
 
+
+
         public abstract void Update(GameTime gameTime);
         public abstract void Draw(SpriteBatch spriteBatch, GameTime gameTime);
     }

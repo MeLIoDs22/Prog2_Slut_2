@@ -21,3 +21,4 @@ C:\Development\Projects\Prog2_Slut_2\Slut_Project_2\Slut_Project_2\obj\Debug\net
 C:\Development\Projects\Prog2_Slut_2\Slut_Project_2\Slut_Project_2\obj\Debug\netcoreapp3.1\Slut_Project_2.dll
 C:\Development\Projects\Prog2_Slut_2\Slut_Project_2\Slut_Project_2\obj\Debug\netcoreapp3.1\Slut_Project_2.pdb
 C:\Development\Projects\Prog2_Slut_2\Slut_Project_2\Slut_Project_2\obj\Debug\netcoreapp3.1\Slut_Project_2.genruntimeconfig.cache
+C:\Development\Projects\Prog2_Slut_2\Slut_Project_2\Slut_Project_2\bin\Debug\netcoreapp3.1\Content\Player.xnb
