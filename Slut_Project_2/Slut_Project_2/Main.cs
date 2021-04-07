@@ -12,15 +12,13 @@ namespace Slut_Project_2
         private SpriteBatch _spriteBatch;
 
 
-        private WorldManager G_Manager;
-
         public Main()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
 
-            G_Manager = new WorldManager();
+            Globals.G_Manager = new WorldManager();
         }
 
         protected override void Initialize()
@@ -32,14 +30,15 @@ namespace Slut_Project_2
             base.Initialize();
 
             // Starts the game after the textures have been loaded.
-            G_Manager.Start();
+            Globals.G_Manager.Start();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            G_Manager.AddTexture("Player", Content.Load<Texture2D>("Player"));
+            Globals.G_Manager.AddTexture("Player", Content.Load<Texture2D>("Player"));
+            Globals.G_Manager.AddTexture("Bullet", Content.Load<Texture2D>("Bullet"));
         }
 
         protected override void Update(GameTime gameTime)
@@ -52,7 +51,7 @@ namespace Slut_Project_2
             Globals.G_Keyboard.Update(gameTime);
 
             // Runs the update function for the game manager.
-            G_Manager.Update(gameTime);
+            Globals.G_Manager.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -64,7 +63,7 @@ namespace Slut_Project_2
             _spriteBatch.Begin();
 
             // Runs the draw function for the game manager.
-            G_Manager.Draw(_spriteBatch, gameTime);
+            Globals.G_Manager.Draw(_spriteBatch, gameTime);
 
             _spriteBatch.End();
 

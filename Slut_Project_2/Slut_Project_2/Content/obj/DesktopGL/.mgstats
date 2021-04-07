@@ -1,2 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Development/Projects/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/Player.png","C:/Development/Projects/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/bin/DesktopGL/Player.xnb","TextureProcessor","Texture2DContent",2061,599349,0,2355323
+"C:/Development/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/Bullet.png","C:/Development/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/bin/DesktopGL/Bullet.xnb","TextureProcessor","Texture2DContent",194,1621,0,239507
+"C:/Development/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/Player.png","C:/Development/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/bin/DesktopGL/Player.xnb","TextureProcessor","Texture2DContent",2061,599349,0,0296864

@@ -4,9 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Development/Projects/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/Player.png</File>
+    <File>C:/Development/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/Bullet.png</File>
+    <File>C:/Development/Prog2_Slut_2/Slut_Project_2/Slut_Project_2/Content/Player.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

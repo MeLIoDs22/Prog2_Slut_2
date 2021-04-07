@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Development\\Projects\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\Slut_Project_2.csproj": {}
+    "C:\\Development\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\Slut_Project_2.csproj": {}
   },
   "projects": {
-    "C:\\Development\\Projects\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\Slut_Project_2.csproj": {
+    "C:\\Development\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\Slut_Project_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\Projects\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\Slut_Project_2.csproj",
+        "projectUniqueName": "C:\\Development\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\Slut_Project_2.csproj",
         "projectName": "Slut_Project_2",
-        "projectPath": "C:\\Development\\Projects\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\Slut_Project_2.csproj",
+        "projectPath": "C:\\Development\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\Slut_Project_2.csproj",
         "packagesPath": "C:\\Users\\loaih\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\Projects\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\obj\\",
+        "outputPath": "C:\\Development\\Prog2_Slut_2\\Slut_Project_2\\Slut_Project_2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

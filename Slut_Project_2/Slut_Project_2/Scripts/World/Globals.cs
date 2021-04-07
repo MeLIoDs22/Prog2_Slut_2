@@ -16,6 +16,7 @@ namespace Slut_Project_2.Scripts.World
     /// </summary>
     public static class Globals
     {
+        public static WorldManager G_Manager;
 
         public static int ScreenWidth, ScreenHeight;
 
@@ -29,6 +30,8 @@ namespace Slut_Project_2.Scripts.World
 
         static Globals()
         {
+            G_Manager = new WorldManager();
+
             ScreenWidth = 1600;
             ScreenHeight = 800;
 

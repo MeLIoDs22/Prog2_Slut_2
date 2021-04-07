@@ -9,11 +9,11 @@ namespace Slut_Project_2.Engine.Graphics._2D
     /// <summary>
     /// A template for 2D sprites.
     /// </summary>
-    class Template_2D : Base_Graphics
+    public class Template_2D : Base_Graphics
     {
 
-#region Fields
-
+        #region Fields
+        protected int _width, _height;
         protected Texture2D _texture;
         protected Vector2 _origin;
 
@@ -53,7 +53,7 @@ namespace Slut_Project_2.Engine.Graphics._2D
         public override void Update(GameTime gameTime)
         {
             // Updates the position info for the sprite.
-            _position_Size = new Rectangle((int)Position.X, (int)Position.Y, 100, 100);
+            _position_Size = new Rectangle((int)Position.X, (int)Position.Y, _width, _height);
 
         }
         

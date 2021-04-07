@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Slut_Project_2.Scripts.Entities;
 using Slut_Project_2.Scripts.Entities.Player;
+using Slut_Project_2.Scripts.Entities.Player.Weapons.Projectiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,13 @@ namespace Slut_Project_2.Scripts
     /// <summary>
     /// Manages all objects in the game.
     /// </summary>
-    class WorldManager
+  public class WorldManager
     {
 
 #region Fields
         // "_objects" Stores all game objects. "_textures" Stores all game textures.
         private List<Base_Entity> _objects;
-        private Dictionary<string, Texture2D> _textures;
+        public Dictionary<string, Texture2D> _textures { get; private set; }
 
 
         // Stores the player object.
@@ -27,8 +28,7 @@ namespace Slut_Project_2.Scripts
 
 
 
-
-#region Methods
+        #region Methods
         public WorldManager()
         {
             _textures = new Dictionary<string, Texture2D>();
@@ -41,9 +41,16 @@ namespace Slut_Project_2.Scripts
         public void Update(GameTime gameTime)
         {
             if(_objects.Any())
-                foreach(var i in _objects)
+                foreach(var i in _objects.ToArray())
                 {
-                    i.Update(gameTime);
+                    if(i.ShouldRemove)
+                    {
+                        _objects.Remove(i);
+                    }
+                    else
+                    {
+                        i.Update(gameTime);
+                    }
                 }
 
         }
@@ -51,7 +58,7 @@ namespace Slut_Project_2.Scripts
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
             if(_objects.Any())
-                foreach(var i in _objects)
+                foreach(var i in _objects.ToArray())
                 {
                     i.Draw(spriteBatch, gameTime);
                 }
@@ -75,6 +82,19 @@ namespace Slut_Project_2.Scripts
                 else
                     _textures.Add(name, texture);
             }
+        }
+        public void AddObject(Base_Entity _object)
+        {
+            if (_object is null)
+            {
+                return;
+            }
+            else
+            {
+                if(!_objects.Contains(_object))
+                    _objects.Add(_object);
+            }
+
         }
 
         // Spawns the player at the start of the game.

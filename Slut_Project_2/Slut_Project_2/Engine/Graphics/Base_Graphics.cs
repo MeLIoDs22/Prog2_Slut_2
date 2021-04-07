@@ -9,7 +9,7 @@ namespace Slut_Project_2.Engine.Graphics
     /// <summary>
     /// Base class inherited by all graphical classes.
     /// </summary>
-    abstract class Base_Graphics
+    public abstract class Base_Graphics
     {
         public abstract Vector2 Position { get; set; }
 
