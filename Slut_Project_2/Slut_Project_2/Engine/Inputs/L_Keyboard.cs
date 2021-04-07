@@ -24,6 +24,7 @@ namespace Slut_Project_2.Engine.Inputs
         // True if space key is pressed and released.
         public bool SpaceOne;
 
+        public bool C;
 
         public L_Keyboard()
         {
@@ -40,6 +41,7 @@ namespace Slut_Project_2.Engine.Inputs
             CurrentState = Keyboard.GetState();
 
             Up_Down_Left_Right_Space();
+            Hotkeys();
         }
 
 
@@ -70,6 +72,13 @@ namespace Slut_Project_2.Engine.Inputs
             if (CurrentState.IsKeyDown(Keys.Space) && OldState.IsKeyUp(Keys.Space))
                 SpaceOne = true;
             else SpaceOne = false;
+        }
+
+        private void Hotkeys()
+        {
+            if (CurrentState.IsKeyDown(Keys.C) && OldState.IsKeyUp(Keys.C))
+                C = true;
+            else C = false;
         }
     }
 }
